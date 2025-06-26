@@ -1,0 +1,87 @@
+/*  background image */
+body {
+  background: url('../assets/magical-mystical-landscape-wallpaper-purple-tones.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Login box form */
+.login-box {
+  background: rgba(255, 255, 255, 0.774);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  z-index: 1;
+}
+
+/* Logo styling and remove img logo background */
+.login-box .login-logo {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+  filter:drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  
+}
+
+
+/* Header */
+.login-box h3 {
+  font-weight: 600;
+  color: #3d195b;
+}
+
+/* Input fields */
+.login-box .form-control {
+  background-color: rgba(255, 255, 255, 0.418);
+  border-left: 2px solid #5a2674;
+  border-radius: 0;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #5a2674;
+  padding: 0.6rem 1rem;
+  color: #000000;
+  font-weight: 500;
+}
+
+.login-box .form-control::placeholder {
+  color: #7e7e7e;
+}
+
+/* Button */
+.login-box .btn {
+  background-color: #5a2674;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 0.6rem;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.login-box .btn:hover {
+  background-color: #4b1f61;
+}
+
+/* Error */
+#error {
+  font-size: 18px;
+
+}
+
+/* Mobile responsive */
+@media (max-width: 500px) {
+  .login-box {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}
